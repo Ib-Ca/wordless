@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>WORDLE PPY</title>
+  </head>
+  <body>
+    <h1>WORDLESS</h1>
+    <div id="container">
+      <p>Bienvenido a Wordless!!</p>
+      <input type="text" id="adivina" />
+      <div id="boton_container">
+        <button class="boton" id="adivina_boton">Probar</button>
+        <button class="boton" id="mostrarModal">Como jugar</button>
+      </div>
+      <div id="grid"></div>
+      <p id="intentos"></p>
+      <div id="miModal" class="modal">
+        <div class="modal-contenido">
+          <span id="cerrarModal" class="cerrar">&times;</span>
+          <h2>Reglas del Juego</h2>
+          <p>
+            Tendrás 6 oportunidades de adivinar una
+            palabra de cinco letras al azar. 
+           </p>
+           <p>Si tienes la letra correcta en el lugar correcto, esta
+              aparecerá en color verde.
+          </p> 
+          <p>Una letra correcta en el sitio equivocado
+             aparece en amarillo. 
+          </p>
+          <p>Una letra que no está en la palabra en ningún
+             lugar sale en gris.
+          </p>
+          <p>Suerte!!</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
