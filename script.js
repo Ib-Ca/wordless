@@ -59,7 +59,7 @@ function final(resultado) {
 }
 //validar input recibido
 function input_check(palabra) {
-  if (/^[a-zA-Z]+$/.test(palabra)) {
+  if (/^[a-zA-ZáéíóúÁÉÍÓÚ]+$/.test(palabra)) {
     //admite solo numeros
     if (palabra.length !== 5) {
       //console.log("intento no valido");
